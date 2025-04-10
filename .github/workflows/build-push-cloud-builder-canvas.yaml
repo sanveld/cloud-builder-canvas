@@ -4,13 +4,9 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'cloud-builder-canvas/**'
   pull_request:
     branches:
       - main
-    paths:
-      - 'cloud-builder-canvas/**'
   workflow_dispatch:  # Allow manual trigger
 
 env:
@@ -52,7 +48,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
-          context: ./cloud-builder-canvas
+          context: .
           push: ${{ github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
