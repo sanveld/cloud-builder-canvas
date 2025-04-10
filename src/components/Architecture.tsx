@@ -1,6 +1,6 @@
-
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { CheckCircle } from "lucide-react";
 
 export function Architecture() {
   const [isVisible, setIsVisible] = useState(false);
