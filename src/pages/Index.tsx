@@ -2,9 +2,7 @@
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { Components } from "@/components/Components";
-import { Architecture } from "@/components/Architecture";
-import { Benefits } from "@/components/Benefits";
-import { Journey } from "@/components/Journey";
+import { BlockVisualizer } from "@/components/BlockVisualizer";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
@@ -13,9 +11,7 @@ const Index = () => {
       <Navbar />
       <Hero />
       <Components />
-      <Architecture />
-      <Benefits />
-      <Journey />
+      <BlockVisualizer />
       <Footer />
     </div>
   );

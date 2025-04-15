@@ -31,14 +31,8 @@ export function Navbar() {
           <a href="#components" className="text-sm font-medium transition-colors hover:text-accent-purple">
             Components
           </a>
-          <a href="#architecture" className="text-sm font-medium transition-colors hover:text-accent-purple">
-            Architecture
-          </a>
-          <a href="#benefits" className="text-sm font-medium transition-colors hover:text-accent-purple">
-            Benefits
-          </a>
-          <a href="#journey" className="text-sm font-medium transition-colors hover:text-accent-purple">
-            Journey
+          <a href="#platform-blocks" className="text-sm font-medium transition-colors hover:text-accent-purple">
+            Platform
           </a>
           <ThemeToggle />
         </nav>
