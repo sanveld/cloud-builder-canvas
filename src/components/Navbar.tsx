@@ -1,5 +1,4 @@
 
-import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { GitBranch } from "lucide-react";
 import { useState, useEffect } from "react";
@@ -28,9 +27,9 @@ export function Navbar() {
           <GitBranch className="h-6 w-6 text-accent-purple" />
           <span className="font-bold text-xl">DevPlatform0</span>
         </div>
-        <nav className="mx-6 hidden md:flex items-center gap-6">
-          <a href="#features" className="text-sm font-medium transition-colors hover:text-accent-purple">
-            Features
+        <nav className="mx-6 flex items-center gap-6">
+          <a href="#components" className="text-sm font-medium transition-colors hover:text-accent-purple">
+            Components
           </a>
           <a href="#architecture" className="text-sm font-medium transition-colors hover:text-accent-purple">
             Architecture
@@ -41,11 +40,8 @@ export function Navbar() {
           <a href="#journey" className="text-sm font-medium transition-colors hover:text-accent-purple">
             Journey
           </a>
-        </nav>
-        <div className="flex items-center gap-3">
           <ThemeToggle />
-          <Button className="button-primary">Get Started</Button>
-        </div>
+        </nav>
       </div>
     </header>
   );

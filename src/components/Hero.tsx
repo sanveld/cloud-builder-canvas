@@ -1,6 +1,5 @@
 
-import { ArrowRight, Github, Server, Terminal } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Server, Terminal, Github } from "lucide-react";
 
 export function Hero() {
   return (
@@ -20,17 +19,6 @@ export function Hero() {
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
             An internal developer platform built on GitHub, deployed with Terraform on AKS
           </p>
-        </div>
-        
-        <div className="flex flex-col md:flex-row gap-4 justify-center">
-          <Button className="button-primary text-lg px-8 py-6">
-            Explore Platform
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
-          <Button variant="outline" className="button-secondary text-lg px-8 py-6">
-            <Github className="mr-2 h-5 w-5" />
-            View on GitHub
-          </Button>
         </div>
         
         <div className="pt-12 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">

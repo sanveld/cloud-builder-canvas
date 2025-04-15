@@ -1,16 +1,15 @@
 
-import { Github, Mail, Send, Twitter } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Github, Mail, Twitter } from "lucide-react";
 
 export function Footer() {
   return (
     <footer className="py-12 border-t border-white/10 relative">
       <div className="container px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="md:col-span-2">
             <h3 className="text-xl font-bold mb-4">DevPlatform0</h3>
             <p className="text-muted-foreground mb-4 max-w-md">
-              An internal developer platform integrating GitHub, Terraform, AKS, Crossplane and Backstage
+              An internal developer platform integrating GitHub, Terraform, AKS, Crossplane, Backstage, and ArgoCD
               for seamless infrastructure provisioning.
             </p>
             <div className="flex space-x-4">
@@ -33,7 +32,7 @@ export function Footer() {
             <h4 className="font-medium mb-4">Links</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#features" className="text-muted-foreground hover:text-accent-purple">Features</a>
+                <a href="#components" className="text-muted-foreground hover:text-accent-purple">Components</a>
               </li>
               <li>
                 <a href="#architecture" className="text-muted-foreground hover:text-accent-purple">Architecture</a>
@@ -45,23 +44,6 @@ export function Footer() {
                 <a href="#journey" className="text-muted-foreground hover:text-accent-purple">Journey</a>
               </li>
             </ul>
-          </div>
-          
-          <div>
-            <h4 className="font-medium mb-4">Stay Updated</h4>
-            <div className="flex">
-              <input
-                type="email"
-                placeholder="Your email"
-                className="bg-white/5 border border-white/10 rounded-l-lg px-4 py-2 w-full focus:outline-none"
-              />
-              <Button className="rounded-l-none">
-                <Send className="h-4 w-4" />
-              </Button>
-            </div>
-            <p className="text-xs text-muted-foreground mt-2">
-              Subscribe to our newsletter for updates
-            </p>
           </div>
         </div>
         
